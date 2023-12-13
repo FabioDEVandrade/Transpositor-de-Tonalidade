@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transpositor de Tonalidade</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="corpo.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="logo_site">
+        <h1>Música da Programação</h1>
+
+        
+    </header>
+   
+        <nav><div class="ancora"><a href="pagina2.html">Página 2</a></div></nav>
+    
+    
+    
+    
+    
+    <section>
+        <div class="titulo2">
+            <h1>Transposição</h1>
+        </div>
+        <div class="select_custom">
+            <select id="selOpções">
+                <option value="C/F">C/F</option>
+                <option value="F/C">F/C</option>
+                <option value="C/Bb">C/Bb</option>
+                <option value="Bb/C">Bb/C</option>
+                <option value="C/Eb">C/Eb</option>
+                <option value="Eb/C">Eb/C</option>
+                <option value="Bb/F">Bb/F</option>
+                <option value="F/Bb">F/Bb</option>
+                <option value="Eb/Bb">Eb/Bb</option>
+                <option value="Bb/Eb">Bb/Eb</option>
+                <option value="Eb/F">Eb/F</option>
+                <option value="F/Eb">F/Eb</option>
+            </select>
+        </div>
+
+
+
+        <div class="input_texto">
+            <input type="text" id="nota_escrita" required>
+            <span>Insira a Nota</span>
+        </div>
+
+
+       <div class="limpar">
+            <button id="clean" onclick="limpar()">X</button>
+        </div>
+
+         <div class="botão_transportar">
+            <button class="transportar" onclick="Transportar()">Transpor</button>
+        </div>
+
+        <div id="resultado">
+        </div>
+
+        
+   
+    </section>
+    
+    <div class="observacao">
+        *Obs: Notas em maiusculo, acidentes em minusculo. <br>
+        *Não deixar espaço depois da ultima nota.
+    </div>
+
+    <footer>
+        
+        <div class="redes_sociais">
+
+            <a href="https://instagram.com/ffabio_anddradde?igshid=OGQ5ZDc2ODk2ZA==" style="--color: #E1306C">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="https://www.tiktok.com/@musicadaprogramacao?is_from_webapp=1&sender_device=pc " style="--color: #FF0050">
+                <i class="fa-brands fa-tiktok"></I>
+            </a>
+
+        </div>
+
+        <div class="versao">
+            <a href="readme.md">Versão 0.2</a> 
+        </div>
+
+        
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

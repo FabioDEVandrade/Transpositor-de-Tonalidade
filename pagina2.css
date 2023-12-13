@@ -1,0 +1,50 @@
+
+
+::marker{
+    color: rgb(98, 0, 255);
+}
+
+
+
+.explicação {
+    position: relative;
+    text-align: left;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    font-style: italic;
+    font-weight: 100;
+    font-size: 22px;
+    margin-top: -5em;
+}
+
+@media (max-width: 1023px){
+    .explicação{
+        font-size: 20px;
+        margin-top: -5em;
+    }
+}
+
+
+
+@media (max-width: 767px){
+
+    
+    .explicação{
+        font-size: 20px;
+        width: 23em;
+        margin-top: -5em;
+        left: -3em;
+        
+    }
+
+
+
+}
+
+@media (max-width: 576px){
+    .explicação{
+        width: 18em;
+        top: -2.5em;
+        left: -6em;
+        font-size: 15px;
+    }
+}

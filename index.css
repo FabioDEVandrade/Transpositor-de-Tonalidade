@@ -1,0 +1,425 @@
+
+
+.select_custom {
+    position: relative;
+    width: 140px; 
+    top: -5.35em;
+    left: -4.4em;
+      
+  }
+
+.select_custom select{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: url(arrow.png) no-repeat right center;
+    background-size: 20px;
+}
+
+ 
+
+
+.select_custom select:focus{
+    outline: none;
+    border-color: rgb(98, 0, 255);
+}
+
+
+:root{
+    --transitionDuration: 0.5s;
+}
+
+
+.input_texto{
+    position: relative;
+    width: 13.7em;
+    top: -7.65em;
+    left: 11.5em;
+    user-select: none;
+    caret-color: rgb(98, 0, 255);
+    z-index: 1;
+}
+
+.input_texto input{
+    outline: none;
+    border: 1px solid rgba(0,0,0,.25);
+    background-color: transparent;
+    color: #000;
+    border-radius: 3px;
+    padding: 10px 25px;
+    font-size: 13px;
+    transition: var( --transitionDuration);
+}
+
+#nota_escrita{
+    padding: 10px 25px 10px 12px;
+
+}
+   
+
+.input_texto span{
+    color: rgba(0,0,0,.25);
+    padding: 0 3px;
+    position: absolute;
+    background-color: #fff;
+    top: 1.3em;
+    left: 0.5em;
+    transform: translateY(-50%);
+    z-index: -1;
+    font-size: 13px;
+    transition: var(--transitionDuration); 
+}
+
+
+.input_texto input:focus,
+.input_texto input:valid{
+    border: 1px solid rgb(146, 99, 255);
+}
+
+.input_texto input:focus ~ span,
+.input_texto input:valid ~ span{
+    color:rgb(98, 0, 255);
+    border-right: 1px solid rgb(98, 0, 255);
+    border-left: 1px solid rgb(98, 0, 255);
+    font-size: 9px;
+    top: .2em;
+    z-index: 1;
+}
+
+
+
+
+
+
+#clean{
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    border-radius: 5em;
+    box-sizing: border-box;
+    color: #1a1a1a4d;
+    cursor: pointer;
+    display: inline-block;
+    font-family: OCR A STd, monospace;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+    top: 4.6em;
+    left: 23.2em;
+    width: 1.3em;
+    height: 1.3em;
+    z-index: 2;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, .32, 1);
+    user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+}
+
+#clean:disabled{
+    pointer-events: none;
+}
+
+
+#clean:hover{
+    background-color: #1a1a1a18;
+    box-shadow: rgba(0,0,0,.25);
+    transform: translateY(-2px);
+}
+
+#clean:active{
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+
+.transportar{
+    appearance: button;
+    position: absolute;
+    top: 19%;
+    left: 77%;
+    background-color: #1899D6;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 10px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 12px 15px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+
+
+
+
+.transportar:after{
+    background-clip: padding-box;
+    background-color: #1CB0F6;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+
+
+.transportar:main, .transportar:focus{
+    user-select: auto;
+}
+
+.transportar:hover:not(:disabled){
+    filter: brightness(1.1);
+}
+
+.transportar:disabled{
+    cursor: auto;
+}
+
+.transportar:active:after{
+    border-width: 0 0 0px;
+}
+
+.transportar:active{
+    padding-bottom: 10px;
+}
+
+
+#resultado{
+    position: relative;
+    margin: auto;
+    text-align: center;
+    width: 135%;
+    top: -35%;
+    left: -17%;
+    font-size: 34px;
+    overflow: hidden;
+    max-height: 8.1em;
+    text-overflow: ellipsis;
+}
+
+.observacao{
+    position: relative;
+    margin: auto;
+    text-align: center;
+    top: 11em;
+    font-size: 14px;
+}
+
+
+@media (max-width: 1023px){
+
+    .select_custom{
+        width: 125px;
+    }
+
+    .input_texto{
+        left: 10.7em;
+        width: 12em;
+    }
+
+
+    #nota_escrita{
+
+        padding: 10px 23px 10px 4px;
+
+    }
+
+    .input_texto span{
+        font-size: 11px;
+    }
+
+    #clean{
+        width: 1.3em;
+        height: 1.2em;
+        top: 4.65em;
+        left: 22em;
+    }
+
+    .transportar{
+        top: 7.4em;
+        left: 48em;
+        padding: 10px 8px;
+        font-size: 12px;
+    }
+
+
+    #resultado{
+        font-size: 28px;
+        max-height: 9.6em;
+    }
+
+    .observacao{
+
+        top: 8em;
+        font-size: 12px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 767px){
+
+    .select_custom{
+        width: 96px;
+    }
+
+    .select_custom select{
+        padding: 7px;
+    }
+
+    .input_texto{
+        top: -7.35em;
+        left: 5.5em;
+        width: 11em;
+    }
+
+    .transportar{
+        top: 8.56em;
+        left: 44em;
+        padding: 7px 8px;
+        font-size: 10px;
+    }
+
+    #clean{
+        left: 18em;
+        top: 4.45em;
+        width: 1.2em;
+        height: 1.2em;
+    }
+
+#nota_escrita{
+    padding: 5px 23px 8px 4px;
+}
+ 
+    #resultado{
+        top: -3.5em;
+        font-size: 25px;
+        max-height: 11.2em;
+    }
+
+    .observacao{
+        top: 8em;
+    }
+    
+    
+    
+    }
+
+
+
+@media (max-width: 576px){
+
+    .select_custom{
+        width: 5em;
+        top: -5.5em;
+        left: -5.5em;
+    }
+
+    .select_custom select{
+        padding: 4px;
+        background-size: 15px;
+    }
+
+    .input_texto{
+        top: -7.2em;
+        width: 5em;
+        left: 2em;
+    }
+
+    .input_texto span{
+        font-size: 10px;
+    }
+
+    
+
+.input_texto input:focus ~ span,
+.input_texto input:valid ~ span{
+    font-size: 6px;
+    top: .1em;
+    
+}
+
+    #nota_escrita{
+        width: 9em;
+        padding: 3px 25px 6px 5px;
+    }
+
+    
+
+    #clean{
+        font-size: 15px;
+        top: 5em;
+        left: 17.3em;
+    }
+
+    .transportar{
+        font-size: 8px;
+        padding: 6px 10px;
+        top: 41em;
+        left: 15em;
+    }
+
+    #resultado{
+        font-size: 16px;
+        width: 17.5em;
+        max-height: 10.8em;
+        left: -5.7em;
+        top: -5em;
+    }
+
+    .observacao{
+        width: 30em;
+        top: 5em;
+        left: 0.5em;
+        font-size: 8px;
+    }
+
+}
